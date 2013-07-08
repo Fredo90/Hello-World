@@ -1,0 +1,38 @@
+mport javax.swing.JOptionPane;
+
+public class Number2 {
+
+	public static void main(String [] args){
+		
+	int YES_OPTION =0;
+		do{
+		
+		String input1 = JOptionPane.showInputDialog(null, "Please enter the first value");
+		
+		double i1 = Double.parseDouble(input1);
+		
+		String input2 = JOptionPane.showInputDialog(null, "Please enter the second value");
+		
+		double i2 = Double.parseDouble(input2);
+		
+		String choice = JOptionPane.showInputDialog(null, " Please choose multiplication or addition");
+		
+		if(choice.equalsIgnoreCase("m")){
+			JOptionPane.showMessageDialog(null,"The product is" +multiplication(i1, i2));
+		}
+		else{
+			JOptionPane.showMessageDialog(null,"The sum is" +sum(i1, i2));
+		}
+		}while(JOptionPane.showConfirmDialog(null, "More calculations?")==YES_OPTION);
+	}
+
+   public static double sum (double i1, double i2){
+	   double output = i1 + i2;
+	   return output;
+   }
+   
+   public static double multiplication (double i1, double i2){
+	   double output = i1 * i2;
+	   return output;
+   }
+}
