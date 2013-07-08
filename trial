@@ -1,2 +1,14 @@
-This is just a trial that I'm doing, I would like to learn alot about json and java script that way I can you git to help people in the office
+//This is just a trial that I'm doing, I would like to learn alot about json and java script that way I can you git to help people in the office
+
+public class github{
+	public static void main (String [] args){
+
+		System.out.println("Adem is getting the door");
+	}
+
+
+}
+
+
+
  
